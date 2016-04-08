@@ -34,7 +34,9 @@ var READ_DELAY = 5000; // Delay em milisegundos para efetuar a leitura do sensor
  * Verifica o status da temperatura
  */
 server.get('/status', function (req, res, next) {
+    console.log('[GET] Request temperature status');
     setTimeout(function () {
+        console.log('[OK] Temperature status was sent');
         res.send(JSON.stringify(sensor.read()));
     }, READ_DELAY);
 
