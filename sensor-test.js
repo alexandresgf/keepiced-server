@@ -2,7 +2,7 @@ var sensorLib = require('node-dht-sensor');
 
 var sensor = {
     initialize: function () {
-        return sensorLib.initialize(11, 24);
+        return sensorLib.initialize(11, 25);
     },
     read: function () {
         var readout = sensorLib.read();
