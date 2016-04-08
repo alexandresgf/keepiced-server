@@ -9,7 +9,7 @@ var sensor = {
         console.log('Temperature: ' + readout.temperature.toFixed(2) + 'C, ' + 'humidity: ' + readout.humidity.toFixed(2) + '%');
         setTimeout(function () {
             sensor.read();
-        }, 10000);
+        }, 5000);
     }
 };
 
