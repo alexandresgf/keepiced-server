@@ -6,7 +6,8 @@ var sensor = {
     },
     read: function () {
         var readout = sensorLib.read();
-        console.log('Temperature: ' + readout.temperature.toFixed(2) + 'C, ' + 'humidity: ' + readout.humidity.toFixed(2) + '%');
+        console.log('Temperature: ' + readout.temperature.toFixed(2) + 'C, ' + 'humidity: ' 
+            + readout.humidity.toFixed(2) + '%, ' + 'error: ' + ((readout.errors) ? 'true' : 'false'));
         setTimeout(function () {
             sensor.read();
         }, 5000);
