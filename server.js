@@ -7,28 +7,9 @@ var sensor = require('node-dht-sensor');
 /**
  * Constantes
  */
-var SENSOR_PORT = 24; // Referência ao pino do GPIO
+var SENSOR_PORT = 25; // Referência ao pino do GPIO
 var SENSOR_TYPE = 11; // 11 = DHT11 ; 21 = DHT21 ; 22 = DHT22
 var READ_DELAY = 5000; // Delay em milisegundos para efetuar a leitura do sensor
-
-/*var sensor = {
-    initialize: function () {
-        return sensorLib.initialize(11, 24);
-    },
-    read: function () {
-        var readout = sensorLib.read();
-        console.log('Temperature: ' + readout.temperature.toFixed(2) + 'C, ' + 'humidity: ' + readout.humidity.toFixed(2) + '%');
-        setTimeout(function () {
-            sensor.read();
-        }, 10000);
-    }
-};*/
-
-/*if (sensor.initialize()) {
-    sensor.read();
-} else {
-    console.warn('Failed to initialize sensor');
-}*/
 
 /**
  * Verifica o status da temperatura
