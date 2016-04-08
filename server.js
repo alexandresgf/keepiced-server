@@ -1,7 +1,7 @@
 'use strict';
 
 var restify = require('restify');
-var server = Restify.createServer({ name: 'KeepIced Server' });
+var server = restify.createServer({ name: 'KeepIced Server' });
 var sensor = require('node-dht-sensor');
 
 /**

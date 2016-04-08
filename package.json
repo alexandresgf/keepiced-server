@@ -1,5 +1,5 @@
 {
-  "name": "ServidorDHT11",
+  "name": "KeepIced Server",
   "description": "Servidor REST para verificar temperatura de um cooler",
   "version": "1.0.0",
   "dependencies": {
