@@ -12,9 +12,19 @@ var SENSOR_TYPE = 11; // 11 = DHT11 ; 21 = DHT21 ; 22 = DHT22
 var READ_DELAY = 5000; // Delay em milisegundos para efetuar a leitura do sensor
 
 /**
- * Verifica o status da temperatura
+ * Verifica o status do servidor
  */
 server.get('/status', function (req, res, next) {
+    console.log('[GET] Request server status');
+    res.send(200);
+
+    return next();
+});
+
+/**
+ * Verifica o status da temperatura
+ */
+server.get('/temperature', function (req, res, next) {
     console.log('[GET] Request temperature status');
     res.send(JSON.stringify(sensor.read()));
 
