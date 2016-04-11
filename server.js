@@ -9,7 +9,6 @@ var sensor = require('node-dht-sensor');
  */
 var SENSOR_PORT = 25; // Referência ao pino do GPIO
 var SENSOR_TYPE = 11; // 11 = DHT11 ; 21 = DHT21 ; 22 = DHT22
-var READ_DELAY = 5000; // Delay em milisegundos para efetuar a leitura do sensor
 
 /**
  * Verifica o status do servidor
